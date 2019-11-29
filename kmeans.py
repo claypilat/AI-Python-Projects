@@ -5,12 +5,12 @@ from sklearn.datasets import load_digits
 from sklearn.cluster import KMeans
 from sklearn import metrics
 
-data = load_digits()
+digits = load_digits()
 
 #scaling to -1 to 1
 data = scale(digits.data)
 
-y = data.targets
+y = digits.target
 
 k = len(np.unique(y))
 samples, features = data.shape
@@ -27,4 +27,5 @@ def bench_k_means(estimator, name, data):
              metrics.silhouette_score(data, estimator.labels_,
                                       metric='euclidean')))
 
-dlf = KMeans(n_clusters=k, init='k-means++',n_init=10,)
+clf = KMeans(n_clusters=k, init='k-means++',n_init=10)
+bench_k_means(clf, "1", data)
