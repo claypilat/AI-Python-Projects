@@ -9,3 +9,6 @@ This project was used to K-nearest neighbor algorithm to predict the class of a 
 
 ## SVM
 This project used the Support Vector Machine algorithm to predict if a cancer was benign or malignant. 
+
+## Kmeans 
+This project used the Kmeans algorithm to classify handwritten digits from the sklean digits datset. 
