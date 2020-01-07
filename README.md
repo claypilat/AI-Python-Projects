@@ -14,4 +14,8 @@ This project used the Support Vector Machine algorithm to predict if a cancer wa
 ### Kmeans 
 This project used the Kmeans algorithm to classify handwritten digits from the sklean digits datset. 
 
-## Neural Networks
+## Neural Networks  
+### NNClothesClassifier
+This project used the NMIST clothes dataset and used neural networks to classify different types of clothing items.
+
+### NNMovieReviews
